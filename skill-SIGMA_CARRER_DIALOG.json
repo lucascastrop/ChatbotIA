@@ -1,0 +1,1484 @@
+{
+  "intents": [
+    {
+      "intent": "funcoes",
+      "examples": [
+        {
+          "text": "Como devo me portar ao assumir o cargo?"
+        },
+        {
+          "text": "Gerente  TI"
+        },
+        {
+          "text": "Gostaria de saber as funcoes do cargo"
+        },
+        {
+          "text": "o que devo fazer se ocupar o cargo?"
+        },
+        {
+          "text": "O que o cargo faz?"
+        },
+        {
+          "text": "Quais as funções atribuídas ao cargo?"
+        },
+        {
+          "text": "Quais as minhas responsabilidades no cargo?"
+        },
+        {
+          "text": "Quais são as responsabilidades do cargo?"
+        }
+      ],
+      "description": "Pesquisar funções de um cargo específico"
+    },
+    {
+      "intent": "listar_areas",
+      "examples": [
+        {
+          "text": "Em quais áreas posso seguir carreira na B2W?"
+        },
+        {
+          "text": "Onde posso trabalhar na B2W?"
+        },
+        {
+          "text": "Quais as possibilidades de atuação na B2W?"
+        },
+        {
+          "text": "Quais são as áreas de atuação profissional da B2W?"
+        }
+      ],
+      "description": "Listar áreas de atuação profissional da empresa"
+    },
+    {
+      "intent": "listar_cargos",
+      "examples": [
+        {
+          "text": "Quais cargos posso assumir na b2w?"
+        },
+        {
+          "text": "Quais os cargos da b2w?"
+        },
+        {
+          "text": "Quais são os empregos disponíveis na b2w?"
+        },
+        {
+          "text": "Qual emprego posso ter na b2w?"
+        }
+      ],
+      "description": "listar todos os cargos da empresa"
+    },
+    {
+      "intent": "listar_competencia",
+      "examples": [
+        {
+          "text": "Quais cargos requerem competências específicas?"
+        },
+        {
+          "text": "Quais os cargos com competências específicas?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "modelo_desenvolvimento",
+      "examples": [
+        {
+          "text": "Como funciona o modelo de carreira em Y?"
+        },
+        {
+          "text": "Como posso crescer dentro da B2W?"
+        },
+        {
+          "text": "Quais as possibilidades de crescimento que possuo na B2W?"
+        },
+        {
+          "text": "Qual é o modelo de desenvolvimento de carreira adotado pela B2W?"
+        }
+      ],
+      "description": "Informar modelo de desenvolvimento adotado pela empresa"
+    },
+    {
+      "intent": "plano_carreira",
+      "examples": [
+        {
+          "text": "Quais cargos antecedem o cargo?"
+        },
+        {
+          "text": "Quais são as etapas necessárias para atingir o cargo ?"
+        },
+        {
+          "text": "Qual é o caminho que devo seguir para atingir o cargo?"
+        },
+        {
+          "text": "Qual é o plano de carreira que eu devo seguir para atingir determinada posição dentro da B2W"
+        }
+      ],
+      "description": "Informar plano de carreira"
+    },
+    {
+      "intent": "requisito",
+      "examples": [
+        {
+          "text": "Como posso atingir o cargo?"
+        },
+        {
+          "text": "O que é preciso para atingir o cargo?"
+        },
+        {
+          "text": "Quais os pré-requisitos para o cargo"
+        },
+        {
+          "text": "Quais os pré-requisitos para o cargo?"
+        },
+        {
+          "text": "Quais são as habilidades necessárias para o cargo?"
+        }
+      ],
+      "description": "Informar os pré-requistos de determinado cargo"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "advogado_corporativo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "advogado corportivo",
+          "synonyms": [
+            "advogado"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "analista_comercial",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "analista de consultor comercial",
+          "synonyms": [
+            "analista consultor"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "analista_financeiro",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "analista financeiro",
+          "synonyms": [
+            "analista de finanças"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "analista_marketing",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "analista de marketing",
+          "synonyms": [
+            "analista mkt"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "analista_rh",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "analista de rh",
+          "synonyms": [
+            "analista de recursos humanos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "assistente_juridico",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "assitente juridico",
+          "synonyms": [
+            "assistente setor juridico"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "comercial_vendas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Comercial",
+          "synonyms": [
+            "comercio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vendas",
+          "synonyms": [
+            "varejo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "consultor_comercial",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "consultor comercial",
+          "synonyms": [
+            "consultor de comercio"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "desenvolvedor_front",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "desenvolvedor front end",
+          "synonyms": [
+            "desenvolvedor front",
+            "front end"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "designer",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "designer",
+          "synonyms": [
+            "profissional de design"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "diretor_financeiro",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "diretor financeiro",
+          "synonyms": [
+            "diretor de finanças"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "financeiro",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "financeiro",
+          "synonyms": [
+            "contas",
+            "departamento financeiro"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gerente_comercial",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gerente comercial",
+          "synonyms": [
+            "gerente comercial",
+            "gerente de comercio"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gerente_juridico",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gerente juridico",
+          "synonyms": [
+            "gerente do departamento juridico"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gerente_marketing",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gerente de marketing",
+          "synonyms": [
+            "gerente mkt"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gerente_TI",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gerente de tecnologia",
+          "synonyms": [
+            "gerente de TI",
+            "gerente ti"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gestor_rh",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gestor de rh",
+          "synonyms": [
+            "gestor de recursos humanos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "juridico",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "juridico",
+          "synonyms": [
+            "departamento juridico"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "listar_cargos",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "listar_competencia",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "marketing",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "marketing",
+          "synonyms": [
+            "design",
+            "mkt",
+            "propaganda"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "RH",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "rh",
+          "synonyms": [
+            "recursos humanos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "supervisor_financeiro",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "supervisor financeiro",
+          "synonyms": [
+            "supervisor de finanças"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "supervisor_rh",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "supervisor rh",
+          "synonyms": [
+            "supervisor de recursos humanos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tecnico_informatica",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tecnico de informatica",
+          "synonyms": [
+            "tecnico TI"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tecnologia",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tecnologia",
+          "synonyms": [
+            "Desenvolvimento de sistemas",
+            "tecnologia da informação",
+            "TI"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Assistente Jurídico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Assistente Jurídico são:\nPré-requisitos: Registro na ordem de advogados do Brasil, formação em direito e experiência com o atendimento de pessoas.\nFunções: Ajudar os clientes com as questões jurídicas ou administrativas da empresa, fazer a análise de contratos, documentos, acordos, sentenças, controle da agenda de advogados, elaboração de relatórios, declarações e petições judiciais e controle de informações em sistemas jurídicos ou planilhas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@assistente_juridico && #funcoes || #requisito",
+      "dialog_node": "node_10_1604004134323",
+      "previous_sibling": "node_4_1604004132072"
+    },
+    {
+      "type": "standard",
+      "title": "Técnico de informática",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo Técnico de informática são:\nPré-requisitos: Curso técnico de informática ou graduação em Ciências da Computação, conhecimento em Inglês avançado e experiência com manutenção de computadores.\nFunções: Efetuar a montagem, acabamento e manutenção de computadores, além da identificação e correção de problemas em aparelhos eletrônicos. Ele também instala e configura redes e softwares, trabalhando no desenvolvimento de sistemas e websites, o que leva a atuar tanto em redes domésticas quanto empresariais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@tecnico_informatica && #funcoes || #requisito",
+      "dialog_node": "node_10_1604004461023",
+      "previous_sibling": "node_7_1604004463175"
+    },
+    {
+      "type": "standard",
+      "title": "Supervisor Financeiro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Supervisor Financeiro são:\nPré-requisitos: Formação em economia e MBA, inglês intermediário, capacidade analítica e experiência em administração.\nFunções: O supervisor financeiro tem a responsabilidade de elaborar orçamentos e demonstrativos financeiros e econômicos, projetar receitas, coletar informações da empresa, comprar recursos estimados com os realizados, além de analisar objetivos e metas definidas. O supervisor também faz a administração de recursos financeiros e também acaba desenvolvendo um relacionamento com instituições financeiras."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@supervisor_financeiro && #funcoes || #requisito",
+      "dialog_node": "node_1_1604003886099",
+      "previous_sibling": "node_6_1604003884058"
+    },
+    {
+      "type": "standard",
+      "title": "Pesquisar Cargos da Empresa",
+      "output": {
+        "generic": [
+          {
+            "title": "Ok, aqui estão os cargos B2W em ordem alfabética:",
+            "options": [
+              {
+                "label": "Advogado corporativo",
+                "value": {
+                  "input": {
+                    "text": "funções do Advogado corporativo"
+                  }
+                }
+              },
+              {
+                "label": "Analista de consultor comercial",
+                "value": {
+                  "input": {
+                    "text": "funções do Analista de consultor comercial"
+                  }
+                }
+              },
+              {
+                "label": "Analista de marketing",
+                "value": {
+                  "input": {
+                    "text": "funções do Analista de marketing"
+                  }
+                }
+              },
+              {
+                "label": "Analista de RH",
+                "value": {
+                  "input": {
+                    "text": "funções do Analista de RH"
+                  }
+                }
+              },
+              {
+                "label": "Analista Financeiro",
+                "value": {
+                  "input": {
+                    "text": "funções do Analista Financeiro"
+                  }
+                }
+              },
+              {
+                "label": "Assistente Jurídico",
+                "value": {
+                  "input": {
+                    "text": "funções do Assistente Jurídico"
+                  }
+                }
+              },
+              {
+                "label": "Consultor comercial",
+                "value": {
+                  "input": {
+                    "text": "funções do Consultor comercial"
+                  }
+                }
+              },
+              {
+                "label": "Desenvolvedor Front-End",
+                "value": {
+                  "input": {
+                    "text": "funções do Desenvolvedor Front-End"
+                  }
+                }
+              },
+              {
+                "label": "Designer",
+                "value": {
+                  "input": {
+                    "text": "funções do Designer"
+                  }
+                }
+              },
+              {
+                "label": "Diretor Financeiro",
+                "value": {
+                  "input": {
+                    "text": "funções do Diretor Financeiro"
+                  }
+                }
+              },
+              {
+                "label": "Gerente comercial",
+                "value": {
+                  "input": {
+                    "text": "funções do Gerente comercial"
+                  }
+                }
+              },
+              {
+                "label": "Gerente de Marketing",
+                "value": {
+                  "input": {
+                    "text": "funções do Gerente de Marketing"
+                  }
+                }
+              },
+              {
+                "label": "Gerente Jurídico",
+                "value": {
+                  "input": {
+                    "text": "funções do Gerente Jurídico"
+                  }
+                }
+              },
+              {
+                "label": "Gestor de RH",
+                "value": {
+                  "input": {
+                    "text": "funções do Gestor de RH"
+                  }
+                }
+              },
+              {
+                "label": "Supervisor de RH",
+                "value": {
+                  "input": {
+                    "text": "funções do Supervisor de RH"
+                  }
+                }
+              },
+              {
+                "label": "Supervisor Financeiro",
+                "value": {
+                  "input": {
+                    "text": "funções do Supervisor Financeiro"
+                  }
+                }
+              },
+              {
+                "label": "Técnico de informática",
+                "value": {
+                  "input": {
+                    "text": "funções do Técnico de informática"
+                  }
+                }
+              },
+              {
+                "label": "Listar por área",
+                "value": {
+                  "input": {
+                    "text": "listar areas profissionais da b2w"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#listar_cargos",
+      "dialog_node": "node_1_1604005713035",
+      "previous_sibling": "node_2_1603996777691"
+    },
+    {
+      "type": "standard",
+      "title": "Gerente Comercial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas para o cargo de Gerente comercial são:\nPré-requisitos: Experiência na área comercial; experiência em cargo de liderança, pós graduação em administração de empresas, Inglês intermediário.\nFunções: Redigir e enviar propostas comerciais, entrar em contato, fidelizar e negociar com clientes, fechar vendas, criar apresentações, efetuar a qualificação de leads, usar corretamente ferramentas de vendas, como o CRM; apresentação da empresa e de produtos ou serviços"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@gerente_comercial && #funcoes || #requisito",
+      "dialog_node": "node_2_1603994198874",
+      "previous_sibling": "node_5_1603994105375"
+    },
+    {
+      "type": "standard",
+      "title": "Pesquisar áreas profissionais da empresa",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1603993678395"
+      },
+      "conditions": "#listar_areas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1603996777691",
+      "previous_sibling": "node_5_1604008448451"
+    },
+    {
+      "type": "standard",
+      "title": "Cargos área Marketing",
+      "output": {
+        "generic": [
+          {
+            "title": "Possuímos informações sobre as funções e pré-requisitos dos seguintes cargos nessa área:",
+            "options": [
+              {
+                "label": "Gerente de Marketing",
+                "value": {
+                  "input": {
+                    "text": "Gerente de Marketing"
+                  }
+                }
+              },
+              {
+                "label": "Analista de Marketing",
+                "value": {
+                  "input": {
+                    "text": "Analista de Marketing"
+                  }
+                }
+              },
+              {
+                "label": "Designer",
+                "value": {
+                  "input": {
+                    "text": "Designer"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@marketing && #funcoes || #requisito",
+      "dialog_node": "node_2_1603998921744",
+      "previous_sibling": "node_7_1604003654263"
+    },
+    {
+      "type": "standard",
+      "title": "Supervisor de RH",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Supervisor de RH são:\nPré-requisitos: Formação em Recursos Humanos, Psicologia ou áreas afins: Experiência generalista em processos de recursos humanos, conhecer as funções de RH (Folha de pagamento, benefícios, R&S, T&D, segurança do trabalho e cargos e salários).\nFunções: Conduzir e apoiar o processo de Recrutamento e Seleção interno e externo, Supervisionar todas as rotinas de Recursos Humanos, Implementar plano de Integração de novos colaboradores, Supervisionar e desenvolver a equipe de trabalho, Monitorar a execução das políticas e procedimentos de recursos humanos, Apoiar os gestores nas ações de recursos humanos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@supervisor_rh && #funcoes || #requisito",
+      "dialog_node": "node_2_1604004301064",
+      "previous_sibling": "node_5_1603999039270"
+    },
+    {
+      "type": "standard",
+      "title": "Designer",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas para o cargo de Designer são:\nPré-requisitos: Curso de design gráfico ou artes, experiência com produção de conteúdo ou propagandas. Deve também ter conhecimento em Inglês.\nFunções: É responsável por elaborar projetos para comerciais e anúncios."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@designer && #funcoes || #requisito",
+      "dialog_node": "node_3_1604003650282",
+      "previous_sibling": "node_7_1603998949271"
+    },
+    {
+      "type": "standard",
+      "title": "Analista de marketing",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas para o cargo de Analista de Marketing são:\nPré-requisitos: Graduação na área de marketing, publicidade e propaganda, economia, administração ou jornalismo. Conhecimento das estratégias disponíveis no mercado, como: mídias sociais; SEO; links patrocinados; Inbound Marketing; Marketing de Conteúdo; analytics; Email Marketing.\nFunções: É responsável por cuidar da análise das estratégias e resultados de marketing, desenvolvendo e mensurando resultados de estratégias de  Marketing Digital  para a empresa, sempre pensando em resultados de alcance em curto, médio e longo prazo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@analista_marketing && #funcoes || #requisito",
+      "dialog_node": "node_3_1604003652396",
+      "previous_sibling": "node_3_1604003650282"
+    },
+    {
+      "type": "standard",
+      "title": "Advogado corporativo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Advogado corporativo são:\nPré-requisitos: Formação em direito, proficiência em inglês e experiência com processos judiciais.\nFunções: Tem a função de exercer uma atividade estratégica dentro de uma organização, uma vez que impacta diretamente no desempenho das atividades e na tomada de decisões pelos gestores. Sem o apoio desse profissional, a empresa pode incorrer em ilegalidades involuntariamente e arcar com riscos legais, como multas de órgãos fiscalizadores, processos administrativos e judiciais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@advogado_corporativo && #funcoes || #requisito",
+      "dialog_node": "node_3_1604004146005",
+      "previous_sibling": "node_10_1604004134323"
+    },
+    {
+      "type": "standard",
+      "title": "Listar cargos com pré-requisito específico",
+      "conditions": "#requisito",
+      "dialog_node": "node_3_1604005755911",
+      "previous_sibling": "node_7_1604005727381"
+    },
+    {
+      "type": "standard",
+      "title": "Listar cargos com competência específica",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#listar_competencia",
+      "dialog_node": "node_3_1604005770845",
+      "previous_sibling": "node_3_1604005755911"
+    },
+    {
+      "type": "standard",
+      "title": "Consultor Comercial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas sobre o cargo de consultor comercial são:\nPré-requisitos: Experiência na área comercial; Boa comunicação oral e escrita; Pró ativo(a); Organizado(a); Detalhista.\nFunções: Entrar em contato com leads que chegam via CRM; Realizar apresentação da empresa e seus serviços; Qualificar o lead e negociar a compra de precatórios; Envio de proposta; Follow up com os leads; Análise da documentação do cliente; Envio da Documentação para a equipe Jurídica; Acompanhamento da documentação a finalização do processo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@consultor_comercial && #funcoes || #requisito && @comercial_vendas",
+      "dialog_node": "node_4_1603993882289",
+      "previous_sibling": "node_2_1603998921744"
+    },
+    {
+      "type": "standard",
+      "title": "Gerente Jurídico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Gerente Jurídico são:\nPré-requisitos: Graduação em direito, Inglês intermediário, capacidade de gestão e trabalho em equipe e experiência com administração.\nFunções: Tem como função planejar e controlar as atividades da área, em assuntos sobre questões cíveis, tributárias, societárias, entre outras, de acordo com as determinações da alta administração. Elabora e acompanha ações judiciais contra terceiros, defendendo os interesses da empresa."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@gerente_juridico && #funcoes || #requisito",
+      "dialog_node": "node_4_1604004132072",
+      "previous_sibling": "node_9_1603998954762"
+    },
+    {
+      "type": "standard",
+      "title": "Analista de RH",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Analista de RH são:\nPré-requisitos: Formação completa, preferencialmente em Administração, Economia, Engenharia, Matemática, Sistemas de Informação. Inglês avançado. Experiência em desenvolvimento de planilhas em Excel e apresentação em PowerPoint. Proatividade, raciocínio lógico, comprometimento e confidencialidade.\nFunções: Apoio na estruturação de Dashboards e análises, Controle de Headcount e indicadores de Recursos Humanos, Atuar diretamente em melhorias, otimização e automação de processos e controles internos globais de RH, Desempenhar atividades com alto volume de tarefas analíticas e de controle, Gerir tempo e prioridades com habilidade e responsabilidade sobre informações sensíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@analista_rh && #funcoes || #requisito",
+      "dialog_node": "node_4_1604004302826",
+      "previous_sibling": "node_2_1604004301064"
+    },
+    {
+      "type": "standard",
+      "title": "Consultar Pré-requisitos e Funções de Cargos e Áreas Específicos",
+      "output": {
+        "generic": [
+          {
+            "title": "Aqui na B2W trabalhamos com as seguintes áreas:",
+            "options": [
+              {
+                "label": "Comercial/Vendas",
+                "value": {
+                  "input": {
+                    "text": "funcoes Comercial "
+                  }
+                }
+              },
+              {
+                "label": "Tecnologia",
+                "value": {
+                  "input": {
+                    "text": "funcoes Tecnologia"
+                  }
+                }
+              },
+              {
+                "label": "Jurídico",
+                "value": {
+                  "input": {
+                    "text": "funcoes Jurídico"
+                  }
+                }
+              },
+              {
+                "label": "Financeiro",
+                "value": {
+                  "input": {
+                    "text": "funcoes Financeiro"
+                  }
+                }
+              },
+              {
+                "label": "Marketing",
+                "value": {
+                  "input": {
+                    "text": "funcoes Marketing"
+                  }
+                }
+              },
+              {
+                "label": "RH",
+                "value": {
+                  "input": {
+                    "text": "funcoes rh"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "(para obter informações sobre as funções e pré-requisitos dos cargos é só escolher uma destas áreas)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "@analista_financeiro"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "#requisito || #funcoes",
+      "dialog_node": "node_5_1603993678395",
+      "previous_sibling": "node_7_1603998164026"
+    },
+    {
+      "type": "standard",
+      "title": "Analista de Consultor Comercial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Analista de consultor comercial são:\nPré-requisitos: Experiência com atendimento ao público, ter noção de administração, boa capacidade de comunicação e saber trabalhar em equipe.\nFunções: Atender os clientes em todas as suas dúvidas; Identificar oportunidades, construir e disseminar melhores práticas comerciais; Realizar atendimento consultivo para garantir excelência no atendimento e monitorar os indicadores de qualidade; Atuar no nível operacional, tático e estratégico junto às áreas que impactam direta e indiretamente o cliente final."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@analista_comercial && #funcoes || #requisito",
+      "dialog_node": "node_5_1603994105375",
+      "previous_sibling": "node_4_1603993882289"
+    },
+    {
+      "type": "standard",
+      "title": "Cargos área Tecnologia",
+      "output": {
+        "generic": [
+          {
+            "title": "Possuímos informações sobre as funções e pré-requisitos dos seguintes cargos nessa área:",
+            "options": [
+              {
+                "label": "Gerente em TI",
+                "value": {
+                  "input": {
+                    "text": "Gerente  em TI"
+                  }
+                }
+              },
+              {
+                "label": "Técnico de informática",
+                "value": {
+                  "input": {
+                    "text": "Técnico de informática"
+                  }
+                }
+              },
+              {
+                "label": "Desenvolvedor Front-End",
+                "value": {
+                  "input": {
+                    "text": "Desenvolvedor Front-End"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@tecnologia && #funcoes || #requisito",
+      "dialog_node": "node_5_1603999039270",
+      "previous_sibling": "node_8_1604004458273"
+    },
+    {
+      "type": "folder",
+      "title": "Consultar funções e pré-requisitos",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1604008448451",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Analista Financeiro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas para o cargo de Analista Financeiro são:\nPré-requisitos: Formação em economia, Inglês intermediário, capacidade analítica, compreensão de mercado.\nFunções: Responsável por realizar o planejamento de uma rotina financeira, acompanhando o pagamento e recebimentos efetuados, analisando o fluxo de caixa e elaborando projeções de faturamento, com o objetivo de observar melhorias no desempenho econômico e financeiro da organização."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@analista_financeiro && #funcoes || #requisito",
+      "dialog_node": "node_6_1604003884058",
+      "previous_sibling": "node_8_1604003880997"
+    },
+    {
+      "type": "standard",
+      "title": "Cargos área comercial/vendas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Possuímos informações sobre as funções e pré-requisitos dos seguintes cargos nessa área:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Consultor Comercial",
+                "value": {
+                  "input": {
+                    "text": "Consultor Comercial"
+                  }
+                }
+              },
+              {
+                "label": "Analista de Consultor Comercial",
+                "value": {
+                  "input": {
+                    "text": "Analista de Consultor Comercial"
+                  }
+                }
+              },
+              {
+                "label": "Gerente Comercial",
+                "value": {
+                  "input": {
+                    "text": "Gerente Comercial"
+                  }
+                }
+              },
+              {
+                "label": "Pesquisar outras áreas",
+                "value": {
+                  "input": {
+                    "text": "Pesquisar outras áreas"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@comercial_vendas && #funcoes || #requisito",
+      "dialog_node": "node_7_1603998164026",
+      "previous_sibling": "node_2_1603994198874"
+    },
+    {
+      "type": "standard",
+      "title": "Cargos área Financeiro",
+      "output": {
+        "generic": [
+          {
+            "title": "Possuímos informações sobre as funções e pré-requisitos dos seguintes cargos nessa área:",
+            "options": [
+              {
+                "label": "Diretor Financeiro",
+                "value": {
+                  "input": {
+                    "text": "Diretor Financeiro"
+                  }
+                }
+              },
+              {
+                "label": "Analista Financeiro",
+                "value": {
+                  "input": {
+                    "text": "Analista Financeiro"
+                  }
+                }
+              },
+              {
+                "label": "Supervisor Financeiro",
+                "value": {
+                  "input": {
+                    "text": "Supervisor Financeiro"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@financeiro && #funcoes || #requisito",
+      "dialog_node": "node_7_1603998949271",
+      "previous_sibling": "node_1_1604003886099"
+    },
+    {
+      "type": "standard",
+      "title": "Gerente de Marketing",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas para o cargo de Gerente de Marketing são:\nPré-requisitos: Graduação na área de Marketing, Comunicação, Administração ou experiência similar em outros empregos, Pós-graduação em Marketing ou áreas afins é um diferencial, Bons conhecimentos do setor da empresa \nFunções:Desenvolve estratégias de marketing e identidade visual das marcas e prospecta budget para implementar ações, com o intuito de promover a imagem institucional e aprimorar os negócios. Define o posicionamento das marcas e de canais de comunicação específicos para cada público. Analisa as tendências do mercado e fatores econômicos e financeiros e planeja e define campanhas voltadas para promoção de produtos e serviços. É o profissional responsável por elaborar pesquisas de mercado e estratégias para aumentar as vendas, se relacionando com toda área Comercial e Marketing."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@gerente_marketing && #funcoes || #requisito",
+      "dialog_node": "node_7_1604003654263",
+      "previous_sibling": "node_3_1604003652396"
+    },
+    {
+      "type": "standard",
+      "title": "Desenvolvedor Front-End",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo Desenvolvedor Front-End são:\nPré-requisitos: Conhecimento em Javascript, HTML, CSS, Sass, Git, SVG, Node.js, jQuery\nFunções: Desenvolver aplicações e páginas web produzindo o layout do produto digital e criando interatividade entre os elementos da página ou do aplicativo. Também deve dar manutenção aos atuais sistemas da empresa, resolvendo eventuais problemas com um perfil investigativo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@desenvolvedor_front && #funcoes || #requisito",
+      "dialog_node": "node_7_1604004463175"
+    },
+    {
+      "type": "standard",
+      "title": "Pesquisar modelo de desenvolvimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A B2W implementa o modelo de desenvolvimento de carreira em Y!\n\nNesse modelo o profissional pode optar entre seguir para o cargo gerencial ou escolher ser um especialista na área técnica de um determinado setor.\n\nCaso o profissional tenha aspirações gerenciais, pode dar continuidade em seu plano de carreira habitual, podendo também aperfeiçoar os conhecimentos. O profissional que deseja ser especialista em determinado setor pode optar por ficar responsável também por buscar soluções alternativas no desenvolvimento de produtos, projetos ou pesquisas.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#modelo_desenvolvimento",
+      "dialog_node": "node_7_1604005727381",
+      "previous_sibling": "node_1_1604005713035"
+    },
+    {
+      "type": "standard",
+      "title": "Diretor Financeiro são:",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas para o cargo de Diretor Financeiro \nPré-requisitos: Formação em administração ou economia, MBA e inglês avançado, experiência em liderança e trabalho em equipe.\nFunções: Tem a função de planejar, organizar, dirigir e controlar as atividades financeiras de uma organização, executando políticas para que a gestão dos recursos disponíveis seja a melhor possível. Ele também estrutura , racionaliza e adequa os serviços de apoio da sua área. O diretor financeiro também implementa processos nas áreas financeira, contábil, fiscal, de controladoria e escrituração."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@diretor_financeiro && #funcoes || #requisito",
+      "dialog_node": "node_8_1604003880997",
+      "previous_sibling": "node_9_1603998951203"
+    },
+    {
+      "type": "standard",
+      "title": "Gestor de RH",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo de Gestor de RH são:\nPré-requisitos: Formação completa, preferencialmente em administração, pedagogia, psicologia, serviço social ou até mesmo direito. Experiência com Excel e Powerpoint, e também proficiência em inglês.\nFunções: O gestor de RH é responsável por fazer a ligação do capital humano com o negócio e garantir que colaboradores e empresa sejam beneficiados com a relação trabalhista. Também tem a função de realizar as atividades burocráticas do setor, como elaborar a folha de pagamento ,cumprir as leis trabalhistas e previdenciárias e engajar os colaboradores da empresa."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@gestor_rh && #funcoes || #requisito",
+      "dialog_node": "node_8_1604004304664",
+      "previous_sibling": "node_4_1604004302826"
+    },
+    {
+      "type": "standard",
+      "title": "Gerente em TI",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As informações básicas do cargo Gerente em TI são:\nPré-requisitos: Experiência com Gerenciamento de operações de TI, liderança, gerenciamento e implantação de grandes projetos de TI com infraestruturas em várias tecnologias.\nFunções: Liderar grandes projetos, incluindo o design e implantação de novos sistemas e serviços de TI, Ajudar a definir a estratégia, arquitetura e processos de infraestrutura de TI. Manter operações essenciais de TI, incluindo sistemas operacionais, ferramentas de segurança, aplicativos, servidores, etc. Resolver problemas de hardware e software relacionados à TI interna e cloud, Rastrear e manter o inventário de hardware e software"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@gerente_TI && #funcoes || #requisito",
+      "dialog_node": "node_8_1604004458273",
+      "previous_sibling": "node_10_1604004461023"
+    },
+    {
+      "type": "standard",
+      "title": "Cargos área Jurídico",
+      "output": {
+        "generic": [
+          {
+            "title": "Possuímos informações sobre as funções e pré-requisitos dos seguintes cargos nessa área:",
+            "options": [
+              {
+                "label": "Advogado Corporativo",
+                "value": {
+                  "input": {
+                    "text": "Advogado Corporativo"
+                  }
+                }
+              },
+              {
+                "label": "Assistente Jurídico",
+                "value": {
+                  "input": {
+                    "text": "Assistente Jurídico"
+                  }
+                }
+              },
+              {
+                "label": "Gerente Jurídico",
+                "value": {
+                  "input": {
+                    "text": "Gerente Jurídico"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@juridico && #funcoes || #requisito",
+      "dialog_node": "node_9_1603998951203",
+      "previous_sibling": "node_3_1604004146005"
+    },
+    {
+      "type": "standard",
+      "title": "Cargos área RH",
+      "output": {
+        "generic": [
+          {
+            "title": "Possuímos informações sobre as funções e pré-requisitos dos seguintes cargos nessa área:",
+            "options": [
+              {
+                "label": "Gestor de RH",
+                "value": {
+                  "input": {
+                    "text": "Gestor de RH"
+                  }
+                }
+              },
+              {
+                "label": "Analista de RH",
+                "value": {
+                  "input": {
+                    "text": "Analista de RH"
+                  }
+                }
+              },
+              {
+                "label": "Supervisor de RH",
+                "value": {
+                  "input": {
+                    "text": "Supervisor de RH"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1604008448451",
+      "conditions": "@RH && #funcoes || #requisito",
+      "dialog_node": "node_9_1603998954762",
+      "previous_sibling": "node_8_1604004304664"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "SIGMA_CARRER_DIALOG",
+  "language": "pt-br",
+  "description": "Chatbot para planejamento/acompanhamento de carreira"
+}
